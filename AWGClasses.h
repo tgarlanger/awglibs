@@ -1,8 +1,8 @@
 /**
- * \file    AWGQueue.cpp
+ * \file    AWGClasses.h
  * \author  Tony Garlanger <tgarlanger@gmail.com>
  * \version 1.0
- * \date    Sat Nov  14 16:41:16 2009
+ * \date    Sun Mar  28 17:00:00 2010
  *
  * \section LICENSE
  *
@@ -20,26 +20,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
- *
- * \section DESCRIPTION
- *
- * The AWGQueue class represents a queue of items
  */
 
+/** \mainpage AWGClasses Documentation
+ *
+ * \section intro_sec Introduction
+ *
+ * This is the introduction.
+ *
+ * \section install_sec Installation
+ *
+ * \subsection step1 Step 1: Opening the box
+ *
+ * etc...
+ */
+
+#include "AWGVector.h"
+#include "AWGMatrix.h"
 #include "AWGQueue.h"
-
-template <class Type>
-AWGQueue<Type>::AWGQueue()
-{
-}
-
-template <class Type>
-AWGQueue<Type>::AWGQueue(const AWGQueue& orig)
-{
-}
-
-template <class Type>
-AWGQueue<Type>::~AWGQueue()
-{
-}
-

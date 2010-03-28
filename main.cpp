@@ -28,7 +28,8 @@
 
 #include <stdio.h>
 
-#include "AWGVector.h"
+//#include "AWGVector.h"
+#include "AWGClasses.h"
 
 //template class AWGVector<int>;
 
