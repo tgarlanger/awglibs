@@ -1,5 +1,5 @@
 /**
- * \file    AWGMatrix.h
+ * \file    AWGQueue.h
  * \author  Tony Garlanger <tgarlanger@gmail.com>
  * \version 1.0
  * \date    Sat Nov  14 16:41:16 2009
@@ -96,9 +96,9 @@ public:
     /**
 	 * Removes the first item in the AWGQueue and allows it to be saved
 	 *
-	 * \param[out] first item
+	 * \param[out] tItem first item
 	 */
-    void Dequeue(Type &tItem);
+    void Dequeue(Type & tItem);
 
     /**
      * Empties the AWGQueue
