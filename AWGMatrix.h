@@ -96,6 +96,8 @@ public:
 
     /**
      * Gets the current number of columns
+     *
+     * \return number of columns
      */
     int GetCols();
 
@@ -113,7 +115,7 @@ public:
      * \param[in] iIndex row of the matrix to return
      * \return row of matrix at index iIndex
      */
-    AWGVector &operator[] (int iIndex);
+    AWGVector<Type> &operator[] (int iIndex);
 
     /**
      * Changes the size of the matrix

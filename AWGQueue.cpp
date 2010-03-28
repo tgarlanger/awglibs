@@ -7,12 +7,15 @@
 
 #include "AWGQueue.h"
 
-AWGQueue::AWGQueue() {
+template <class Type>
+AWGQueue<Type>::AWGQueue() {
 }
 
-AWGQueue::AWGQueue(const AWGQueue& orig) {
+template <class Type>
+AWGQueue<Type>::AWGQueue(const AWGQueue& orig) {
 }
 
-AWGQueue::~AWGQueue() {
+template <class Type>
+AWGQueue<Type>::~AWGQueue() {
 }
 

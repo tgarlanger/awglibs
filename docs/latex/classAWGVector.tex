@@ -1,0 +1,136 @@
+\hypertarget{classAWGVector}{
+\section{AWGVector$<$ Type $>$ Class Template Reference}
+\label{classAWGVector}\index{AWGVector@{AWGVector}}
+}
+
+
+\hyperlink{classAWGVector}{AWGVector} represents a 1-\/dimentional array.  
+
+
+{\ttfamily \#include \char`\"{}AWGVector.h\char`\"{}}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAWGVector_a52d2aeaf8a3239b0fd5d48aceba3d050}{AWGVector} ()
+\item 
+\hyperlink{classAWGVector_a91bbe006772288e4942802ef734d2b4e}{AWGVector} (const \hyperlink{classAWGVector}{AWGVector} \&orig)
+\item 
+\hyperlink{classAWGVector_a3c2c1e2132e9777524c6509bafcb8133}{AWGVector} (int iSize)
+\item 
+\hyperlink{classAWGVector_a22692b3e4189d78d13b5828264374b8e}{AWGVector} (int iSize, Type typeDefaultValue)
+\item 
+virtual \hyperlink{classAWGVector_a0ac70e66f5a0b79ec3eeca0ebd24c566}{$\sim$AWGVector} ()
+\item 
+Type \& \hyperlink{classAWGVector_ac77f482986aaecdb71e4f2601e4836a7}{operator\mbox{[}$\,$\mbox{]}} (const int iIndex)
+\item 
+const Type \& \hyperlink{classAWGVector_aa6059d1f2e2d2e531a1fce5a03235175}{operator\mbox{[}$\,$\mbox{]}} (const int iIndex) const 
+\item 
+int \hyperlink{classAWGVector_abc39a471c9556aa62b9f19f06e399777}{GetSize} ()
+\item 
+void \hyperlink{classAWGVector_a0f4ea8cfdf8ae589597e2b347d8f6e61}{SetSize} (int iSize)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Type$>$ class AWGVector$<$ Type $>$}
+
+\hyperlink{classAWGVector}{AWGVector} represents a 1-\/dimentional array. Class is made up of an array of type Type and a size 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAWGVector_a52d2aeaf8a3239b0fd5d48aceba3d050}{
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\subsubsection[{AWGVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGVector}$<$ Type $>$::{\bf AWGVector} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_a52d2aeaf8a3239b0fd5d48aceba3d050}
+Default Constructor \hypertarget{classAWGVector_a91bbe006772288e4942802ef734d2b4e}{
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\subsubsection[{AWGVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGVector}$<$ Type $>$::{\bf AWGVector} (const {\bf AWGVector}$<$ Type $>$ \& {\em orig})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_a91bbe006772288e4942802ef734d2b4e}
+Copy Constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em orig}]\hyperlink{classAWGVector}{AWGVector} to copy \end{DoxyParams}
+\hypertarget{classAWGVector_a3c2c1e2132e9777524c6509bafcb8133}{
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\subsubsection[{AWGVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGVector}$<$ Type $>$::{\bf AWGVector} (int {\em iSize})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_a3c2c1e2132e9777524c6509bafcb8133}
+Parameterized Constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em iSize}]value to set the size to \end{DoxyParams}
+\hypertarget{classAWGVector_a22692b3e4189d78d13b5828264374b8e}{
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\index{AWGVector@{AWGVector}!AWGVector@{AWGVector}}
+\subsubsection[{AWGVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type$>$ {\bf AWGVector}$<$ Type $>$::{\bf AWGVector} (int {\em iSize}, \/  Type {\em typeDefaultValue})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_a22692b3e4189d78d13b5828264374b8e}
+Parameterized Constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em iSize}]value to set the size to \item[\mbox{$\leftarrow$} {\em typeDefaultValue}]value to set the items in the array to \end{DoxyParams}
+\hypertarget{classAWGVector_a0ac70e66f5a0b79ec3eeca0ebd24c566}{
+\index{AWGVector@{AWGVector}!$\sim$AWGVector@{$\sim$AWGVector}}
+\index{$\sim$AWGVector@{$\sim$AWGVector}!AWGVector@{AWGVector}}
+\subsubsection[{$\sim$AWGVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGVector}$<$ Type $>$::$\sim${\bf AWGVector} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classAWGVector_a0ac70e66f5a0b79ec3eeca0ebd24c566}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAWGVector_abc39a471c9556aa62b9f19f06e399777}{
+\index{AWGVector@{AWGVector}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!AWGVector@{AWGVector}}
+\subsubsection[{GetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ int {\bf AWGVector}$<$ Type $>$::GetSize ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_abc39a471c9556aa62b9f19f06e399777}
+Gets the current size of the \hyperlink{classAWGVector}{AWGVector}
+
+\begin{DoxyReturn}{Returns}
+size of the \hyperlink{classAWGVector}{AWGVector} 
+\end{DoxyReturn}
+\hypertarget{classAWGVector_aa6059d1f2e2d2e531a1fce5a03235175}{
+\index{AWGVector@{AWGVector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!AWGVector@{AWGVector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ const Type \& {\bf AWGVector}$<$ Type $>$::operator\mbox{[}$\,$\mbox{]} (const int {\em iIndex}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_aa6059d1f2e2d2e531a1fce5a03235175}
+Array subscript operator
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em iIndex}]index in the vector to return \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type object at index iIndex 
+\end{DoxyReturn}
+\hypertarget{classAWGVector_ac77f482986aaecdb71e4f2601e4836a7}{
+\index{AWGVector@{AWGVector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!AWGVector@{AWGVector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ Type \& {\bf AWGVector}$<$ Type $>$::operator\mbox{[}$\,$\mbox{]} (const int {\em iIndex})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_ac77f482986aaecdb71e4f2601e4836a7}
+Array subscript operator
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em iIndex}]index in the vector to return \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type object at index iIndex 
+\end{DoxyReturn}
+\hypertarget{classAWGVector_a0f4ea8cfdf8ae589597e2b347d8f6e61}{
+\index{AWGVector@{AWGVector}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!AWGVector@{AWGVector}}
+\subsubsection[{SetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ void {\bf AWGVector}$<$ Type $>$::SetSize (int {\em iSize})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGVector_a0f4ea8cfdf8ae589597e2b347d8f6e61}
+Changes the size of the \hyperlink{classAWGVector}{AWGVector}
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em iSize}]value to resize to \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AWGVector_8h}{AWGVector.h}\item 
+AWGVector.cpp\end{DoxyCompactItemize}

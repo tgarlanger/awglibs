@@ -7,12 +7,18 @@
 
 #include "AWGMatrix.h"
 
-AWGMatrix::AWGMatrix() {
+template <class Type>
+AWGMatrix<Type>::AWGMatrix()
+{
 }
 
-AWGMatrix::AWGMatrix(const AWGMatrix& orig) {
+template <class Type>
+AWGMatrix<Type>::AWGMatrix(const AWGMatrix& orig)
+{
 }
 
-AWGMatrix::~AWGMatrix() {
+template <class Type>
+AWGMatrix<Type>::~AWGMatrix()
+{
 }
 
