@@ -45,24 +45,64 @@ class AWGQueue
 private:
 
 public:
+	/**
+	 * Default Constructor
+	 */
     AWGQueue();
     
+    /**
+	 * Copy Constructor
+	 *
+	 * \param[in] orig AWGVector to copy
+	 */
     AWGQueue(const AWGQueue& orig);
 
+    /**
+	 * Destructor
+	 */
     virtual ~AWGQueue();
 
+    /**
+     * Gets the first item in the AWGQueue
+     *
+     * \return the first item in the AWGQueue
+     */
     const Type &GetFront() const;
 
+    /**
+     * Checks if the AWGQueue is empty
+     *
+     * \return true if the AWGQueue is empty
+     */
     bool IsEmpty() const;
 
+    /**
+     * Gets the number of items in the AWGQueue
+     *
+     * \return number of items in the AWGQueue
+     */
     int GetSize() const;
 
+    /**
+     * Adds a new item at the end of the AWGQueue
+     */
     void EnQueue(const Type &tItem);
 
+    /**
+     * Removes the first item in the AWGQueue
+     */
     void DeQueue();
 
+    /**
+	 * Removes the first item in the AWGQueue and allows it to be saved
+	 *
+	 * \param[out] first item
+	 */
     void Dequeue(Type &tItem);
 
+    /**
+     * Empties the AWGQueue
+     */
     void MakeEmpty();
 };
 

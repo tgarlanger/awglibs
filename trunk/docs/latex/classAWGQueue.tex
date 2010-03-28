@@ -1,0 +1,129 @@
+\hypertarget{classAWGQueue}{
+\section{AWGQueue$<$ Type $>$ Class Template Reference}
+\label{classAWGQueue}\index{AWGQueue@{AWGQueue}}
+}
+
+
+\hyperlink{classAWGQueue}{AWGQueue} represents a queue.  
+
+
+{\ttfamily \#include \char`\"{}AWGQueue.h\char`\"{}}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAWGQueue_acc697a692098f14f933e70318639bab2}{AWGQueue} ()
+\item 
+\hyperlink{classAWGQueue_ac0a6aa6cd1e1681c5b2ccc577095e56c}{AWGQueue} (const \hyperlink{classAWGQueue}{AWGQueue} \&orig)
+\item 
+virtual \hyperlink{classAWGQueue_ae7b463f710e30740339f63247e76a207}{$\sim$AWGQueue} ()
+\item 
+const Type \& \hyperlink{classAWGQueue_a8553079c1e8edd832226f7e25a1f53c6}{GetFront} () const 
+\item 
+bool \hyperlink{classAWGQueue_aea641c224cf00f838f92ef9f84ef99d0}{IsEmpty} () const 
+\item 
+int \hyperlink{classAWGQueue_af86ef02bdd68c2261615d8e5af017bc7}{GetSize} () const 
+\item 
+void \hyperlink{classAWGQueue_a2eadbdc35a395e441e7c05905217e763}{EnQueue} (const Type \&tItem)
+\item 
+void \hyperlink{classAWGQueue_afa93a1624254d57529c8d3fe95c560ca}{DeQueue} ()
+\item 
+void \hyperlink{classAWGQueue_a9f0de0508811cf9c866db01279b9fe87}{Dequeue} (Type \&tItem)
+\item 
+void \hyperlink{classAWGQueue_ac080dbd149a6403e35b0eb2445fdf4c2}{MakeEmpty} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Type$>$ class AWGQueue$<$ Type $>$}
+
+\hyperlink{classAWGQueue}{AWGQueue} represents a queue. Class is made up of an array and two indexes.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classAWGVector}{AWGVector} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAWGQueue_acc697a692098f14f933e70318639bab2}{
+\index{AWGQueue@{AWGQueue}!AWGQueue@{AWGQueue}}
+\index{AWGQueue@{AWGQueue}!AWGQueue@{AWGQueue}}
+\subsubsection[{AWGQueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGQueue}$<$ Type $>$::{\bf AWGQueue} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGQueue_acc697a692098f14f933e70318639bab2}
+Default Constructor \hypertarget{classAWGQueue_ac0a6aa6cd1e1681c5b2ccc577095e56c}{
+\index{AWGQueue@{AWGQueue}!AWGQueue@{AWGQueue}}
+\index{AWGQueue@{AWGQueue}!AWGQueue@{AWGQueue}}
+\subsubsection[{AWGQueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGQueue}$<$ Type $>$::{\bf AWGQueue} (const {\bf AWGQueue}$<$ Type $>$ \& {\em orig})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classAWGQueue_ac0a6aa6cd1e1681c5b2ccc577095e56c}
+Copy Constructor
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em orig}]\hyperlink{classAWGVector}{AWGVector} to copy \end{DoxyParams}
+\hypertarget{classAWGQueue_ae7b463f710e30740339f63247e76a207}{
+\index{AWGQueue@{AWGQueue}!$\sim$AWGQueue@{$\sim$AWGQueue}}
+\index{$\sim$AWGQueue@{$\sim$AWGQueue}!AWGQueue@{AWGQueue}}
+\subsubsection[{$\sim$AWGQueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ {\bf AWGQueue}$<$ Type $>$::$\sim${\bf AWGQueue} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classAWGQueue_ae7b463f710e30740339f63247e76a207}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAWGQueue_a9f0de0508811cf9c866db01279b9fe87}{
+\index{AWGQueue@{AWGQueue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!AWGQueue@{AWGQueue}}
+\subsubsection[{Dequeue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ void {\bf AWGQueue}$<$ Type $>$::Dequeue (Type \& {\em tItem})}}
+\label{classAWGQueue_a9f0de0508811cf9c866db01279b9fe87}
+Removes the first item in the \hyperlink{classAWGQueue}{AWGQueue} and allows it to be saved
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em first}]item \end{DoxyParams}
+\hypertarget{classAWGQueue_afa93a1624254d57529c8d3fe95c560ca}{
+\index{AWGQueue@{AWGQueue}!DeQueue@{DeQueue}}
+\index{DeQueue@{DeQueue}!AWGQueue@{AWGQueue}}
+\subsubsection[{DeQueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ void {\bf AWGQueue}$<$ Type $>$::DeQueue ()}}
+\label{classAWGQueue_afa93a1624254d57529c8d3fe95c560ca}
+Removes the first item in the \hyperlink{classAWGQueue}{AWGQueue} \hypertarget{classAWGQueue_a2eadbdc35a395e441e7c05905217e763}{
+\index{AWGQueue@{AWGQueue}!EnQueue@{EnQueue}}
+\index{EnQueue@{EnQueue}!AWGQueue@{AWGQueue}}
+\subsubsection[{EnQueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ void {\bf AWGQueue}$<$ Type $>$::EnQueue (const Type \& {\em tItem})}}
+\label{classAWGQueue_a2eadbdc35a395e441e7c05905217e763}
+Adds a new item at the end of the \hyperlink{classAWGQueue}{AWGQueue} \hypertarget{classAWGQueue_a8553079c1e8edd832226f7e25a1f53c6}{
+\index{AWGQueue@{AWGQueue}!GetFront@{GetFront}}
+\index{GetFront@{GetFront}!AWGQueue@{AWGQueue}}
+\subsubsection[{GetFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ const Type\& {\bf AWGQueue}$<$ Type $>$::GetFront () const}}
+\label{classAWGQueue_a8553079c1e8edd832226f7e25a1f53c6}
+Gets the first item in the \hyperlink{classAWGQueue}{AWGQueue}
+
+\begin{DoxyReturn}{Returns}
+the first item in the \hyperlink{classAWGQueue}{AWGQueue} 
+\end{DoxyReturn}
+\hypertarget{classAWGQueue_af86ef02bdd68c2261615d8e5af017bc7}{
+\index{AWGQueue@{AWGQueue}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!AWGQueue@{AWGQueue}}
+\subsubsection[{GetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ int {\bf AWGQueue}$<$ Type $>$::GetSize () const}}
+\label{classAWGQueue_af86ef02bdd68c2261615d8e5af017bc7}
+Gets the number of items in the \hyperlink{classAWGQueue}{AWGQueue}
+
+\begin{DoxyReturn}{Returns}
+number of items in the \hyperlink{classAWGQueue}{AWGQueue} 
+\end{DoxyReturn}
+\hypertarget{classAWGQueue_aea641c224cf00f838f92ef9f84ef99d0}{
+\index{AWGQueue@{AWGQueue}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!AWGQueue@{AWGQueue}}
+\subsubsection[{IsEmpty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ bool {\bf AWGQueue}$<$ Type $>$::IsEmpty () const}}
+\label{classAWGQueue_aea641c224cf00f838f92ef9f84ef99d0}
+Checks if the \hyperlink{classAWGQueue}{AWGQueue} is empty
+
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{classAWGQueue}{AWGQueue} is empty 
+\end{DoxyReturn}
+\hypertarget{classAWGQueue_ac080dbd149a6403e35b0eb2445fdf4c2}{
+\index{AWGQueue@{AWGQueue}!MakeEmpty@{MakeEmpty}}
+\index{MakeEmpty@{MakeEmpty}!AWGQueue@{AWGQueue}}
+\subsubsection[{MakeEmpty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Type $>$ void {\bf AWGQueue}$<$ Type $>$::MakeEmpty ()}}
+\label{classAWGQueue_ac080dbd149a6403e35b0eb2445fdf4c2}
+Empties the \hyperlink{classAWGQueue}{AWGQueue} 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+AWGQueue.h\item 
+AWGQueue.cpp\end{DoxyCompactItemize}
