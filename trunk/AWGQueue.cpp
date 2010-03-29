@@ -30,11 +30,19 @@
 
 template <class Type>
 AWGQueue<Type>::AWGQueue()
+	: m_iSize(0),
+	  m_iFront(0),
+	  m_iBack(-1),
+	  m_typeVector(__DEFAULT_SIZE__)
 {
 }
 
 template <class Type>
 AWGQueue<Type>::AWGQueue(const AWGQueue& orig)
+	: m_iSize(orig.m_iSize),
+	  m_iFront(orig.m_iFront),
+	  m_iBack(orig.m_iBack),
+	  m_typeVector(orig.m_typeVector)
 {
 }
 
@@ -43,3 +51,8 @@ AWGQueue<Type>::~AWGQueue()
 {
 }
 
+template <class Type>
+bool AWGQueue<Type>::IsEmpty()
+{
+	return m_iSize == 0;
+}

@@ -101,6 +101,21 @@ const Type &AWGVector<Type>::operator [] (const int iIndex) const
 }
 
 template <class Type>
+const AWGVector<Type> &AWGVector<Type>::operator = (const AWGVector<Type> &orig)
+{
+	delete[] m_typeVector;
+
+	m_iSize = orig.GetSize();
+
+	m_typeVector = new Type[m_iSize];
+
+	for ( int index = 0; index < m_iSize; index++ )
+	{
+		m_typeVector[index] = orig[index];
+	}
+}
+
+template <class Type>
 int AWGVector<Type>::GetSize()
 {
     return m_iSize;
