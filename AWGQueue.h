@@ -31,6 +31,11 @@
 
 #include "AWGVector.h"
 
+/**
+ * \brief Default size of an AWGQueue storage
+ */
+#define __DEFAULT_SIZE__	10
+
 template <class Type>
 /**
  * \class AWGQueue AWGQueue.h "AWGQueue.h"
@@ -43,6 +48,17 @@ template <class Type>
 class AWGQueue
 {
 private:
+	AWGVector<Type> m_typeVector; /** < Storage for items */
+
+	int m_iFront;	/** < Index of the front item */
+	int m_iBack;	/** < Index of the back item */
+
+	int m_iSize;	/** < Number of items in the AWGQueue */
+
+	/**
+	 * Doubles the size of the vector so that there is room for more elements
+	 */
+	void DoubleVector();
 
 public:
 	/**
@@ -104,6 +120,14 @@ public:
      * Empties the AWGQueue
      */
     void MakeEmpty();
+
+    /**
+     * Assignment Operator
+     *
+     * \param[in] orig The original AWGQueue to Copy
+     * \return Reference to the current instance
+     */
+    const AWGQueue<Type> &operator = (const AWGQueue<Type> &orig);
 };
 
 #endif	// __AWGQUEUE_H__

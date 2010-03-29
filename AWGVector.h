@@ -32,7 +32,7 @@
 template <class Type>
 /**
  * \class AWGVector AWGVector.h "AWGVector.h"
- * \brief AWGVector represents a 1-dimentional array
+ * \brief AWGVector represents a 1-dimensional array
  *
  * Class is made up of an array of type Type and a size
  */
@@ -89,6 +89,14 @@ public:
      * \return Type object at index iIndex
      */
     const Type &operator [] (const int iIndex) const;
+
+    /**
+     * Assignment operator
+     *
+     * \param[in] orig The original AWGVector to copy
+     * \return Reference to current instance
+     */
+    const AWGVector<Type> &operator = (const AWGVector<Type> &orig);
 
     /**
      * Gets the current size of the AWGVector
