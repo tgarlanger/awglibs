@@ -143,5 +143,7 @@ public:
     void SetCols(int iCols);
 };
 
+#include "AWGMatrix.h"
+
 #endif	// __AWGMATRIX_H__
 
