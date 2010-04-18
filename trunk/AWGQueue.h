@@ -130,5 +130,7 @@ public:
     const AWGQueue<Type> &operator = (const AWGQueue<Type> &orig);
 };
 
+#include "AWGQueue.cpp"
+
 #endif	// __AWGQUEUE_H__
 
