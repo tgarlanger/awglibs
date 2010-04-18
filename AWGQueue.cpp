@@ -50,9 +50,10 @@ template <class Type>
 AWGQueue<Type>::~AWGQueue()
 {
 }
-
+/*
 template <class Type>
 bool AWGQueue<Type>::IsEmpty() const
 {
 	return (m_iSize == 0);
 }
+*/

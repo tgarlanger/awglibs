@@ -28,9 +28,7 @@
 
 #include <stdio.h>
 
-//#include "AWGVector.h"
 #include "AWGClasses.h"
-#include "AWGMatrix.h"
 
 //template class AWGVector<int>;
 
@@ -56,7 +54,7 @@ int main(int argc, char** argv)
 
     vec1.SetSize(3);
 
-    mat1.SetSize(2,2);
+    //mat1.SetSize(2,2);
 
     /*
      * vec 1:
@@ -107,6 +105,7 @@ int main(int argc, char** argv)
      * index: 1,0 value 1
      * index: 1,1 value 2
      */
+    /*
     printf("\nmat 1:\n");
     for (i = 0; i < mat1.GetRows(); i++)
     {
@@ -116,6 +115,7 @@ int main(int argc, char** argv)
     		printf("index: %d, %d, Value: %d\n",i,j,mat1[i][j]);
     	}
     }
+	*/
 
     return (0);
 }
